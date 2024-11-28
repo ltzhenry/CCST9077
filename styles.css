@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #EDEDED;
+    background: linear-gradient(135deg, #1C1C3C, #2A2A72);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background: rgba(20, 20, 50, 0.8);
+    color: #F5F5F5;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.act {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #FFD700;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: rgba(20, 20, 50, 0.8);
+    color: #CCC;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.act {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.act.active {
+    opacity: 1;
+}
+.act {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.act.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+p {
+    margin-bottom: 1em;  /* 增加段落间距 */
+    line-height: 1.6;    /* 提高可读性 */
+}
